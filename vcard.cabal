@@ -1,16 +1,16 @@
+Cabal-version:      3.0
 Name:               vcard
 Version:            0.2
 Homepage:           http://qrcard.us/
 Synopsis:           Implements the RFC 2426 vCard 3.0 spec
 Description:        Implements the RFC 2426 vCard 3.0 spec
-License:            BSD3
+-- License:            BSD3
 License-file:       LICENSE
 Author:             Spearhead Development, L.L.C.
 Maintainer:         Michael Schade <michael@spearheaddev.com>
 Copyright:          (c) 2011 Spearhead Development, L.L.C.
 Category:           Text
 Build-type:         Simple
-Cabal-version:      >=1.6
 
 source-repository head
     type:       git
@@ -18,6 +18,6 @@ source-repository head
 
 Library
     Exposed-modules:    Text.VCard
-    Build-depends:      base >= 3 && < 5, old-locale, time <= 1.0
+    Build-depends:      base ^>=4.20.0.0, old-locale, time
     ghc-options:        -Wall -fwarn-tabs
     Hs-Source-Dirs:     src
