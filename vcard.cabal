@@ -18,6 +18,6 @@ source-repository head
 
 Library
     Exposed-modules:    Text.VCard
-    Build-depends:      base >= 3 && < 5, old-locale, time
+    Build-depends:      base >= 3 && < 5, old-locale, time <= 1.0
     ghc-options:        -Wall -fwarn-tabs
     Hs-Source-Dirs:     src
